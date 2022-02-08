@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
-}
+.Page {
+  background-color: #F2F0EC;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+  margin-top: 60px;
+  margin-bottom: 110px;
+
+  padding: 70px 130px 110px;
+  min-width: 100vw;
+}
+
+.Page__Heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0px;
+}
+
+.Page__Subheading {
+  color: #595959;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.container {
+  display: flex;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  padding: 50px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.Slider {
+  width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card {
+  background-color: #E4DBD1;
+  
+  border-radius: 6px;
+
+  overflow: hidden;
 }
+
+.Card__Header {
+  background-color: #E4DBD1;
+
+  display: flex;
+  justify-content: space-around;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+
+  box-sizing: border-box;
+
+  padding: 30px;
+}
+
+.Card__NutrientImage {
+  width: 136px;
+
+}
+
+.Card__Info {
+  background-color: white;
+  
+  box-sizing: border-box;
+  
+  padding: 30px;
+  padding-bottom: 45px;
+
+  min-height: 256px;
+}
+
+.Card__PropertiesList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Card__Property {
+  color: #595959;
+
+  display: flex;
+  align-items: baseline;
+
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.Tick {
+  margin-right: 10px;
+}
+
+.Card__Symbols {
+  padding-top: 35px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.Slogan {
+  color: #595959;
+
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 35px;
+
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.Button {
+  background: #DE506B;
+  color: #fff;
+
+  border-radius: 110px;
+  border: none;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 2px;
+
+  height: 60px;
+  width: 330px;
+}
+
+.Page__Description {
+  color: #000;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+@media screen and (max-width: 992px) {
+  .Page {
+    margin-top: 70px;
+    margin-bottom: 100px;
+
+    padding: 50px 15px;
+  }
+
+  .Page__Heading {
+    font-size: 30px;
+    line-height: 45px;    
+  }
+
+  .Page__Subheading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+
+  .container {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+
+  .Card {
+    width: 260px;
+    margin: 0 15px;
+  }
+
+  .Card__Header {
+    padding: 20px;
+  }
+
+  .Card__NutrientImage {
+    width: 110px;
+  }
+
+  .Page__Description {
+    color: #000;
+  
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .Slogan {
+    font-size: 25px;
+    line-height: 35px;
+
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .Button {
+    width: 260px;
+  }
+};
